@@ -1,0 +1,35 @@
+:root {
+  --bs-link-color: black;
+  --bs-link-hover-color:#99C63C;
+
+  .navbar {
+    --bs-navbar-brand-margin-end: 45px;
+    --bs-navbar-color: black;
+  }
+
+  .breadcrumb-item::before {
+  --bs-breadcrumb-divider: " ";
+  }
+
+  .btn-light {
+    --bs-btn-bg:white;
+  }
+}
+
+$font-family-main:'Lato', sans-serif;
+
+$font-xl:28px;
+$font-l:17px;
+$font-m:15px;
+$font-s:13px;
+$font-xs:12px;
+
+$accent-color: #99C63C;
+$main-bg:#F4F4F4;
+
+$br-point-comp:1280px;
+$br-point-netbook:1024px;
+$br-point-tab:768px;
+$br-point-mob-l:576px;
+$br-point-mob:480px;
+$br-point-mini:320px;

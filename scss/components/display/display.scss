@@ -1,0 +1,82 @@
+.display {
+  padding: 11px 0;
+  background-color: $main-bg;
+
+  .breadcrumb {
+    gap: 42px;
+    font-size: $font-s;
+    margin-bottom: 10px;
+
+
+    &-item {
+      position: relative;
+
+      &::before {
+        width: 26px;
+        height: 1px;
+        display: block;
+        background-color: #BDBDBE;
+        position: absolute;
+        top: 50%;
+        left: -40%;
+      }
+    }
+  }
+
+
+  &__title {
+    font-weight: 700;
+    font-size: $font-xl;
+    margin-bottom: 37px;
+  }
+
+
+  &__nav {
+
+    &-dropdown {
+      margin-right: 30px;
+
+      button {
+        width: 100%;
+        border-radius: 30px;
+        border-color: transparent;
+        padding: 16px 25px;
+
+      }
+    }
+
+    &-search {
+
+      &-field {
+        position: relative;
+        width: 100%;
+
+
+          label {
+            width: 100%;
+            display: block;
+
+
+
+            input {
+              background-color: white;
+              border-color: transparent;
+              border-radius: 30px;
+              padding: 16px 0 16px 23px;
+              color: #BDBDBE;
+
+            }
+          }
+
+      button {
+        position: absolute;
+        right: 3%;
+        bottom:20%;
+        background-color: transparent;
+        border-color: transparent;
+      }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,52 @@
+.products {
+
+  @media (max-width: $br-point-tab) {
+
+    &__wrapper {
+
+
+      &__items-row {
+        flex-wrap: wrap;
+      }
+
+      .last-col {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @media (max-width: $br-point-mob-l){
+    &__side-bar{
+      display: none;
+    }
+
+    &__items-row{
+
+      .card{
+        width: 80%;
+        margin: 10px auto;
+
+        &__pics{
+          width: 100%;
+          margin: 0 40px 40px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $br-point-mob){
+
+    &__items-row{
+
+      .card{
+
+        &__pics{
+
+          margin: 0 0 40px;
+        }
+      }
+    }
+  }
+}
+

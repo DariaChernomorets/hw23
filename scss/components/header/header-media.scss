@@ -1,0 +1,23 @@
+.header {
+
+  @media (max-width: $br-point-tab) {
+
+    $font-s: 15px;
+
+    &__top {
+      font-size: $font-s;
+
+    &-lang {
+      .dropdown {
+        button {
+          font-size: $font-s;
+        }
+
+        &-item {
+          font-size: $font-s;
+        }
+      }
+    }
+  }
+  }
+}

@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Duo unlimited</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row flex-wrap">
+                    <div class="col-6">
+                        <div class="header__top-phone">
+                            <a href="tel:+330499632050">
+                                <i class="bi bi-telephone"></i>
+                                <span>+33 (0)4 99 63 20 50</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="header__top-lang d-flex justify-content-end">
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle p-0 border-0" type="button" id="lang-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-globe2"></i>
+                                    <span>English</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="lang-menu">
+                                    <li><a class="dropdown-item" href="#">German</a></li>
+                                    <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                                    <li><a class="dropdown-item" href="#">Chinese</a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+
+        <div class="header__navigation">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">
+                                <img src="../assets/images/logo.svg" alt="logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                    <li class="nav-item header__search-wrapper d-flex align-items-center">
+                                        <a class="nav-link header__search p-0" href="#" data-bs-toggle="modal"
+                                           data-bs-target="#searchModal">
+                                            <i class="bi bi-search"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle p-0" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Products
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle p-0" href="#" id="applicationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Applications
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link p-0" href="#">Documentation</a>
+                                    </li>
+                                </ul>
+
+
+                                <div class="header__navigation-auth d-flex">
+
+                                    <a href="#">
+                                        <i class="bi bi-person" data-bs-toggle="modal" data-bs-target="#registerModal"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="bi bi-cart2" data-bs-toggle="offcanvas" href="#cartSection" role="button" aria-controls="offcanvasExample"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+</header>
+<main>
+    <section class="display">
+        <div class="container">
+            <nav aria-label="display__breadcrumb">
+                <ol class="breadcrumb d-flex">
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Products</a></li>
+                    <li class="breadcrumb-item"><a href="#">Display Wall </a></li>
+                    <li class="breadcrumb-item" >Products</li>
+                </ol>
+            </nav>
+            <h2 class="display__title">
+                Display Wall
+            </h2>
+<div class="display__nav  d-flex">
+            <div class="display__nav-dropdown col-lg-2 col-md-3 col-sm-4">
+                <button class="btn btn-light dropdown-toggle text-start" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Display Wall
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Products</a></li>
+                    <li><a class="dropdown-item" href="#">Display Wall</a></li>
+                    <li><a class="dropdown-item" href="#">Products</a></li>
+                </ul>
+            </div>
+
+    <div class="display__nav-search d-flex col-lg-10 col-md-9 col-sm-8 align-items-center ">
+        <div class="display__nav-search-field">
+            <label >
+                 <input  type="text" class="form-control" placeholder="Search">
+            </label>
+
+            <button type="button" class="btn btn-light">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+            </div>
+    </section>
+
+
+    <section class="products">
+        <div class="container">
+            <div class="row p-0 m-0 d-flex products__wrapper">
+            <aside class="products__side-bar col-lg-2 col-md-3 col-sm-4 p-0">
+                <div class="products__side-bar-wrapper">
+                    <div class="products__side-bar-results d-flex">
+
+                        <div class="results">
+                            <p>23 results</p>
+                        </div>
+
+                        <div class="clear d-flex">
+                            <i class="bi bi-x-circle"></i>
+                            <p>Clear all Filters</p>
+                        </div>
+                    </div>
+
+                    <div class="products__side-bar-filters">
+
+                        <h5>Subcategory</h5>
+                        <ul class="Subcategory-list products__side-bar-list">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Xpressions <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Xtension <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Virage <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Contour <span>(4)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Xperience <span>(4)</span>
+                            </li>
+                        </ul>
+
+                        <h5>Type</h5>
+                        <ul class="type-list products__side-bar-list">
+
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Pop-up <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Tubar <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Table top <span>(8)</span>
+                            </li>
+                        </ul>
+
+                        <h5>Features</h5>
+                        <ul class="features-list products__side-bar-list">
+
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Backlit <span>(7)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                TV Mount <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Shelving <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Arch <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Double sided <span>(8)</span>
+                            </li>
+                        </ul>
+
+                        <h5>Width</h5>
+                        <ul class="width-list products__side-bar-list">
+
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                2.5 <span>(7)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                5 <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                8 <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                10 <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                               20 <span>(8)</span>
+                            </li>
+                        </ul>
+
+                        <h5>Height</h5>
+                        <ul class="height-list products__side-bar-list">
+
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                4 <span>(7)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                8 <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                10 <span>(8)</span>
+                            </li>
+                        </ul>
+
+                        <h5>Form</h5>
+                        <ul class="form-list products__side-bar-list">
+
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Straight <span>(7)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Curved <span>(8)</span>
+                            </li>
+                        </ul>
+
+                        <h5>Price Range</h5>
+                        <ul class="price-list products__side-bar-list">
+
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                550-699 <span>(27)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                700-999 <span>(38)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                1000-1999 <span>(48)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                2000-3999 <span>(8)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                4000+ <span>(8)</span>
+                            </li>
+                        </ul>
+
+                        <h5>Set-up Time</h5>
+                        <ul class="time-list products__side-bar-list">
+
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                1+ (Fast) <span>(27)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                5+ (Easy) <span>(38)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                10+ (Average) <span>(48)</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                20+ (Expert) <span>(8)</span>
+                            </li>
+                         </ul>
+
+                    </div>
+                </div>
+            </aside>
+
+            <div class="products__items col-lg-10 col-md-9 col-sm-8 p-0 ">
+                <div class="row m-0 products__items-row">
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-new.svg" alt="new">
+                                </a>
+                            </div>
+
+                           <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag d-flex flex-column" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-hot.svg" alt="hot">
+                                </a>
+
+                                <a href="#">
+                                    <img src="../assets/images/tag-favorite.svg" alt="team favorite">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-hot.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-new.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag">
+                                <a  href="#">
+                                    <img src="../assets/images/tag-new.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag d-flex flex-column" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-hot.svg">
+                                </a>
+
+                                <a href="#">
+                                    <img src="../assets/images/tag-favorite.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-new.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag d-flex flex-column" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-hot.svg">
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/images/tag-favorite.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag">
+                                <a  href="#">
+                                    <img src="../assets/images/tag-new.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-1.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <div class="card-tag d-flex flex-column" >
+                                <a href="#">
+                                    <img src="../assets/images/tag-hot.svg">
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/images/tag-favorite.svg">
+                                </a>
+                            </div>
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-2.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-0 m-0">
+
+                        <div class="card p-0">
+
+                            <a href="#">
+                                <div class="card__pics new d-flex justify-content-between align-items-center">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                    <img src="../assets/images/item-3.svg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5>Contour 10x4</h5>
+                                    <p class="card-text">8123,99 €</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer ">
+
+        <div class="footer__main">
+            <div class="container">
+                <div class="row footer__main-row">
+            <div class="col-3 footer__contact">
+                <img class="footer__contact-logo" src="../assets/images/logo-footer.svg" alt="logo">
+                <div class="footer__contact-address d-flex">
+                    <i class="bi bi-geo-alt"></i>
+                    <address>344, rue Jardin Colar - 34130
+                        LANSARGUES - FRANCE</address>
+                </div>
+                <div class="footer__contact-phone">
+                    <a href="tel:+330499632050">
+                        <i class="bi bi-telephone"></i>
+                        <span>+33 (0)4 99 63 20 50</span>
+                    </a>
+                </div>
+
+                <div class="footer__contact-email">
+                    <a href="mailto:sales@duodisplay.com">
+                        <i class="bi bi-envelope"></i>
+                        <span>sales@duodisplay.com</span>
+                    </a>
+                </div>
+                <div class="footer__contact-img">
+                     <img src="../assets/images/made-in-france.svg" alt="made in France">
+                </div>
+            </div>
+            <div class="col-6 footer__navigation">
+                <div class="row">
+                    <div class="col-3">
+                        <h3 class="footer__navigation-title">Products</h3>
+                        <ul class="footer__navigation-products p-0">
+                            <li class="nav-product"><a href="#">Banner stands</a></li>
+                            <li class="nav-product"><a href="#">Display Wall</a></li>
+                            <li class="nav-product"><a href="#">Counters</a></li>
+                            <li class="nav-product"><a href="#">Outdoor</a></li>
+                            <li class="nav-product"><a href="#">Frames</a></li>
+                            <li class="nav-product"><a href="#">Stands</a></li>
+                            <li class="nav-product"><a href="#">Outdoor</a></li>
+                            <li class="nav-product"><a href="#">Frames</a></li>
+                            <li class="nav-product"><a href="#">Stands</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <h3 class="footer__navigation-title">Applications</h3>
+                        <ul class="p-0">
+                            <li class="nav-applications"><a href="#">Tradeshows</a></li>
+                            <li class="nav-applications"><a href="#">Events</a></li>
+                            <li class="nav-applications"><a href="#">Road-shows</a></li>
+                            <li class="nav-applications"><a href="#">Decoration</a></li>
+                            <li class="nav-applications"><a href="#">Retail</a></li>
+                            <li class="nav-applications"><a href="#">Printing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <h3 class="footer__navigation-title">My Profile</h3>
+                        <ul class="p-0">
+                            <li class="nav-profile"><a href="#">Dashboard</a></li>
+                            <li class="nav-profile"><a href="#">Account</a></li>
+                            <li class="nav-profile"><a href="#">Orders</a></li>
+                            <li class="nav-profile"><a href="#">Quotes</a></li>
+                            <li class="nav-profile"><a href="#">My Contacts</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <h3 class="footer__navigation-title">Duo Display</h3>
+                        <ul class="p-0">
+                            <li class="nav-display"><a href="#">About Duo</a></li>
+                            <li class="nav-display"><a href="#">General terms</a></li>
+                            <li class="nav-display"><a href="#">Warranty</a></li>
+                            <li class="nav-display"><a href="#">Legal notice</a></li>
+                            <li class="nav-display"><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3  footer__news d-flex flex-column align-items-end">
+                <h4 class="footer__news-title">Newsletter</h4>
+                <form class="footer__news-form">
+                    <label>
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="bi bi-arrow-right-circle"></i></button>
+                    </label>
+                </form>
+
+                <div class="footer__dropdown">
+                    <button class="btn btn-sm dropdown-toggle" type="button" id="lang-menu-footer" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i>
+                        <span>English</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="lang-menu-footer">
+                        <li><a class="dropdown-item" href="#">German</a></li>
+                        <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                        <li><a class="dropdown-item" href="#">Chinese</a></li>
+                    </ul>
+                </div>
+
+                <ul class="footer__news-social d-flex justify-content-start">
+                    <li><a href="#"><img src="../assets/images/sm-1.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/images/twitter.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/images/facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/images/instagram.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/images/linkedin.svg" alt=""></a></li>
+                    <li><a href="#"><img src="../assets/images/youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
+           </div>
+        </div>
+        <div class="footer__copywrite ">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="footer__copywrite-info d-flex col-10">
+                        <p>© 2021 Duo Industrie. All rights reserved. From <b>Duo</b> with</p>
+                        <a href="#"><i class="bi bi-heart"></i></a>
+                    </div>
+
+                    <div class="footer__copywrite-arrow d-flex col-2 justify-content-end">
+                        <div class="footer__copywrite-arrow-wrapper d-flex justify-content-center">
+                            <a href="#"><i class="bi bi-arrow-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</footer>
+<!-- Search modal-->
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Modal register-->
+
+<div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Registration</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <label for="repeatPasswordInput" class="form-label">Repeat password</label>
+                    <input type="password" class="form-control" id="repeatPasswordInput" placeholder="Repeat password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cart section -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSection" aria-labelledby="cartSectionLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartSectionLabel">Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            Your cart is empty
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

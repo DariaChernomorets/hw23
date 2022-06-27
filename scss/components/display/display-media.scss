@@ -1,0 +1,16 @@
+.display{
+
+  @media (max-width: $br-point-mob-l) {
+
+    &__nav{
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      gap: 20px;
+
+      &-dropdown,
+      &-search{
+        width: 100%;
+      }
+    }
+  }
+}

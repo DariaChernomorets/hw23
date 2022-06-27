@@ -1,0 +1,59 @@
+.header{
+  box-shadow:  0 0  12px rgba(72, 79, 78, 0.17);
+
+  &__top{
+    padding: 5px 0;
+    background-color: $main-bg;
+    font-size: $font-s;
+
+      i{
+        padding-right: 8px;
+      }
+
+    &-lang{
+      .dropdown{
+        button {
+          font-size: $font-s;
+        }
+
+        &-item {
+          font-size: $font-s;
+        }
+        &:active,
+        &:hover{
+          color: $accent-color;
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__search-wrapper{
+    margin-right: 65px;
+  }
+
+  &__search{
+    padding-right: 65px;
+    font-size: 16px;
+  }
+
+  &__navigation{
+
+    background-color: white;
+    .nav-item{
+
+      &:not(:first-child){
+        &:not(:last-child){
+          margin-right: 30px;
+        }
+      }
+    }
+    &-auth{
+      gap: 12px;
+      i{
+        font-size: 22px;
+      }
+    }
+  }
+}

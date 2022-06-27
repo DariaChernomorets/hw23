@@ -1,0 +1,148 @@
+.footer{
+  background-color: #26282C;
+  padding-top: 47px;
+
+  &__main{
+    margin-bottom: 22px;
+  }
+    &__contact{
+      color: #BDBDBE;
+
+      i{
+        margin-right: 8px;
+      }
+
+      a{
+        color: #BDBDBE;
+      }
+
+    &-logo{
+      margin-bottom: 16px;
+    }
+      &-address{
+        max-width:80% ;
+        margin-bottom: 21px;
+      }
+
+      &-phone{
+        margin-bottom: 22px;
+      }
+
+      &-email{
+        margin-bottom: 27px;
+      }
+
+      &-img{
+        margin-bottom: 28px;
+      }
+    }
+
+  &__navigation{
+
+    ul {
+      list-style: none;
+      a {
+        color: #BDBDBE;
+      }
+    }
+
+    &-title{
+      color: white;
+      font-weight: 700;
+      font-size: $font-l;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__news-title{
+    color: white;
+    font-weight: 700;
+    font-size: $font-l;
+    margin: 0 auto 16px;
+
+  }
+
+  &__news-form{
+    position: relative;
+    input{
+      background-color: #26282C;
+      border: 0.5px solid #515151;
+      border-radius: 39px;
+      padding: 13px 17px;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    button{
+      position: absolute;
+      left: 75%;
+      top: 17%;
+      background: none;
+      border: none;
+
+      i{
+        color: $accent-color;
+        background-color: transparent;
+        font-size: 20px;
+      }
+    }
+  }
+  &__dropdown{
+  margin-bottom: 32px;
+
+    #lang-menu-footer{
+      color: #F4F4F4;
+      border: 1px solid #515151;
+      border-radius: 39px;
+      padding: 13px 60px;
+    }
+  }
+
+  &__news{
+    &-social{
+      gap: 6px;
+    }
+  }
+
+  &__copywrite{
+    background-color: black;
+    padding-top: 11px;
+
+    &-info {
+      color: #BDBDBE;
+      gap: 20px;
+      font-size: $font-s;
+      letter-spacing: 1px;
+
+      p {
+        max-width: 350px;
+      }
+
+      i {
+        color: #BDBDBE;
+        font-size: 14px;
+
+        &:hover{
+          color: $accent-color;
+          transition: .3s;
+        }
+      }
+    }
+    &-arrow{
+
+      &-wrapper{
+      height: 30px;
+      width: 30px;
+      background-color: $accent-color;
+      border-radius: 50%;
+
+      i{
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+
+      }
+    }
+    }
+  }
+  }
