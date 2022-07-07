@@ -1,9 +1,54 @@
 .products {
+@media (min-width:$br-point-tab) {
 
+  .filter-btn {
+    display: none;
+  }
+}
+
+  @media(max-width: $br-point-comp){
+  .card {
+
+    &__pics {
+
+        &:hover {
+          transform: translateX(-125%);
+        }
+
+      img{
+        padding-left: 20px;
+      }
+      }
+    }
+
+
+
+}
+  @media(max-width: $br-point-netbook) {
+    &__items-pages {
+     &-controls{
+       .arrow{
+         width: 70px;
+       }
+     }
+    }
+    label {
+      span {
+        padding: 0 5px;
+      }
+    }
+  }
   @media (max-width: $br-point-tab) {
+    .filter-btn{
+      display: block;
+      width: 100%;
+    }
 
+    &__side-bar{
+      display: none;
+  }
     &__wrapper {
-
+      flex-wrap: wrap;
 
       &__items-row {
         flex-wrap: wrap;
@@ -16,34 +61,84 @@
     }
   }
 
-  @media (max-width: $br-point-mob-l){
-    &__side-bar{
-      display: none;
-    }
+  @media (max-width: $br-point-mob-l) {
 
-    &__items-row{
 
-      .card{
-        width: 80%;
-        margin: 10px auto;
+    &__items {
+      &-pages {
 
-        &__pics{
-          width: 100%;
-          margin: 0 40px 40px;
+        &-controls {
+          justify-content: center;
+          margin-bottom: 15px;
+
+        }
+
+        .dropdown{
+          justify-content: center !important;
+          button{
+            width: 80%;
+          }
+        }
+
+      }
+      &-row {
+
+        .card {
+          width: 80%;
+          margin: 10px auto;
+
+          &__pics {
+            width: 100%;
+
+            img {
+              padding-left: 15%;
+
+            }
+
+
+            &:hover {
+              transform: translateX(-97%);
+            }
+          }
         }
       }
     }
   }
+  @media (max-width: $br-point-mob) {
 
-  @media (max-width: $br-point-mob){
+    &__items {
+      &-pages-controls{
+        position: relative;
 
-    &__items-row{
+        .arrow{
+          position: absolute;
+          width:30%;
+       }
 
-      .card{
+        .arrow-left{
+          bottom:82%;
+          left:10%;
+        }
+        .arrow-right{
+          bottom:82%;
+          right:10%;
+        }
+      }
+      &-row {
 
-        &__pics{
+        .card {
 
-          margin: 0 0 40px;
+          &__pics {
+
+            img {
+              padding-left: 10%;
+
+            }
+
+            &:hover {
+              transform: translateX(-117%);
+            }
+          }
         }
       }
     }

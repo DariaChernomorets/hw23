@@ -20,4 +20,14 @@
     }
   }
   }
+  @media (max-width: $br-point-mob){
+    &__top{
+      &-phone{
+        width:80%;
+      }
+      &-lang{
+        width:20%;
+      }
+    }
+  }
 }

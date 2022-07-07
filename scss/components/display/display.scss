@@ -32,9 +32,10 @@
 
 
   &__nav {
+    flex-wrap: nowrap;
 
     &-dropdown {
-      margin-right: 30px;
+      margin-right: 25px;
 
       button {
         width: 100%;

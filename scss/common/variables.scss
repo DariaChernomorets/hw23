@@ -1,6 +1,6 @@
 :root {
   --bs-link-color: black;
-  --bs-link-hover-color:#99C63C;
+  --bs-link-hover-color: #99C63C;
 
   .navbar {
     --bs-navbar-brand-margin-end: 45px;
@@ -8,14 +8,35 @@
   }
 
   .breadcrumb-item::before {
-  --bs-breadcrumb-divider: " ";
+    --bs-breadcrumb-divider: " ";
   }
 
   .btn-light {
-    --bs-btn-bg:white;
+    --bs-btn-bg: white;
+  }
+  .accordion-button{
+    --bs-accordion-btn-padding-x:0;
+    --bs-accordion-btn-padding-y:10px;
+  }
+  .accordion-button:not(.collapsed) {
+    --bs-accordion-active-bg: white;
+  }
+
+  .accordion-item:first-of-type {
+    --bs-accordion-border-radius:0;
+  }
+  .accordion-item {
+    --bs-accordion-border-width:0;
+    --bs-accordion-border-color:transparent;
+  }
+  .accordion-body {
+    --bs-accordion-body-padding-x:0;
+  }
+
+  .offcanvas{
+    --bs-offcanvas-height:100vh;
   }
 }
-
 $font-family-main:'Lato', sans-serif;
 
 $font-xl:28px;
@@ -28,7 +49,7 @@ $accent-color: #99C63C;
 $main-bg:#F4F4F4;
 
 $br-point-comp:1280px;
-$br-point-netbook:1024px;
+$br-point-netbook:992px;
 $br-point-tab:768px;
 $br-point-mob-l:576px;
 $br-point-mob:480px;
